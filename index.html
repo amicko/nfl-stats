@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NFL Player Stats</title>
+	<link rel="stylesheet" type="text/css" href="/styles/main.sass.css">
+</head>
+<body>
+<table id="firstTable">
+	<tr>
+		<th id="firstTableName"></th>
+	</tr>
+	<tr>
+		<th id="firstTableTeam"></th>
+	</tr>
+	<tr>
+		<td>Attempt</td>
+		<td id="firstTableAttempts"></td>
+	</tr>
+	<tr>
+		<td>Completions</td>
+		<td id="firstTableCompletions"></td>
+	</tr>
+	<tr>
+		<td>Yards</td>
+		<td id="firstTableYards"></td>
+	</tr>
+	<tr>
+		<td>Touchdowns</td>
+		<td id="firstTableTouchdowns"></td>
+	</tr>
+	<tr>
+		<td>Interceptions</td>
+		<td id="firstTableInterceptions"></td>
+	</tr>
+	<tr>
+		<td>Sacks</td>
+		<td id="firstTableSacks"></td>
+	</tr>
+	<tr>
+		<td>Longest Completion</td>
+		<td id="firstTableLongestCompletion"></td>
+	</tr>
+</table>
+
+<form id="addAttemptForm">
+	<label>Add Attempt</label>
+	<!-- <select id="type">Type
+		<option id="touchdown">Touchdown</option>
+		<option id="incomplete">Incomplete</option>
+		<option id="interception">Interception</option>
+		<option id="complete">Complete</option>
+		<option id="sack">Sack</option>
+	</select> -->
+	<input id="type" type="text">
+	<input id="yards" type="number">
+	<button id="formButton">Submit</button>
+</form>
+
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
